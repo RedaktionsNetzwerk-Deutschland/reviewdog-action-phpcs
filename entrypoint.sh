@@ -4,7 +4,7 @@ cd "${GITHUB_WORKSPACE}" || exit
 
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
 
-phpcs --report=checkstyle \
+phpcs -d memory_limit=${INPUT_MEMORY_LIMIT:-128m} --report=checkstyle \
 | reviewdog \
     -f="checkstyle" \
     -name="phpcs" \

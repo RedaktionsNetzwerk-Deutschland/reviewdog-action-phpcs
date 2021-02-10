@@ -34,6 +34,11 @@ inputs:
   reviewdog_flags:
     description: 'Additional reviewdog flags'
     default: ''
+  memory_limit:
+    description: |
+      set the php memory_limit for phpcs
+      Default is `128m`.
+    default: '128m'
 ```
 
 ## Usage
