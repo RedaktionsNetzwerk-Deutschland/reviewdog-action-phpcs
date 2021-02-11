@@ -39,6 +39,16 @@ inputs:
       set the php memory_limit for phpcs
       Default is `128m`.
     default: '128m'
+  phpcs_installed_paths:
+    description: |
+      set additional paths for phpcs
+      Default is ``.
+    default: ''
+  coding_standard:
+    description: |
+      set the codeing standard check for phpcs
+      Default is `--standard=PSR12`.
+    default: '--standard=PSR12'
 ```
 
 ## Usage

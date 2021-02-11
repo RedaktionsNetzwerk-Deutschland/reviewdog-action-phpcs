@@ -4,7 +4,11 @@ cd "${GITHUB_WORKSPACE}" || exit
 
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
 
-phpcs -d memory_limit=${INPUT_MEMORY_LIMIT:-128m} --report=checkstyle \
+if [ "${INPUT_PHPCS_INSTALLED_PATHS}" != "" ];then
+  phpcs --config-set installed_paths ${INPUT_PHPCS_INSTALLED_PATHS}
+fi
+
+phpcs -d memory_limit=${INPUT_MEMORY_LIMIT:-128m} ${INPUT_CODING_STANDARD:---standard=PSR12} --report=checkstyle \
 | reviewdog \
     -f="checkstyle" \
     -name="phpcs" \
