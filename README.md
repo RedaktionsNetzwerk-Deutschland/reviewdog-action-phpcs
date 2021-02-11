@@ -46,9 +46,9 @@ inputs:
     default: ''
   coding_standard:
     description: |
-      set the codeing standard check for phpcs
-      Default is `--standard=PSR12`.
-    default: '--standard=PSR12'
+      set the coding standard check for phpcs
+      Default is `PSR12`.
+    default: 'PSR12'
 ```
 
 ## Usage

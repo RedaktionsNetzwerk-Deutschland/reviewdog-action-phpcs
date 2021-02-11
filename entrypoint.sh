@@ -8,7 +8,7 @@ if [ "${INPUT_PHPCS_INSTALLED_PATHS}" != "" ];then
   phpcs --config-set installed_paths ${INPUT_PHPCS_INSTALLED_PATHS}
 fi
 
-phpcs -d memory_limit=${INPUT_MEMORY_LIMIT:-128m} ${INPUT_CODING_STANDARD:---standard=PSR12} --report=checkstyle \
+phpcs -d memory_limit=${INPUT_MEMORY_LIMIT:-128m} --standard=${INPUT_CODING_STANDARD:-PSR12} --report=checkstyle \
 | reviewdog \
     -f="checkstyle" \
     -name="phpcs" \
