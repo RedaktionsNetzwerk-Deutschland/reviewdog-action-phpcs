@@ -36,19 +36,16 @@ inputs:
     default: ''
   memory_limit:
     description: |
-      set the php memory_limit for phpcs
-      Default is `128m`.
-    default: '128m'
+      Set the php memory_limit for phpcs.
   phpcs_installed_paths:
     description: |
-      set additional paths for phpcs
-      Default is ``.
-    default: ''
+      Set additional paths for phpcs.
   coding_standard:
     description: |
-      set the coding standard check for phpcs
-      Default is `PSR12`.
-    default: 'PSR12'
+      Set the coding standard check for phpcs.
+  command_args:
+    description: |
+      Arguments for phpcs. Overwrites all other options like memory_limit and coding_standard.
 ```
 
 ## Usage
