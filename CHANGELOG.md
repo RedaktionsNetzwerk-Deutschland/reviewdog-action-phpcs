@@ -1,3 +1,10 @@
+### [1.2.2](https://github.com/RedaktionsNetzwerk-Deutschland/reviewdog-action-phpcs/compare/v1.2.1...v1.2.2) (2021-02-15)
+
+
+### Bug Fixes
+
+* **arguments:** double phpcs typo ([a1f1704](https://github.com/RedaktionsNetzwerk-Deutschland/reviewdog-action-phpcs/commit/a1f17044ea011781ca465ec3c5bcc2dddbe60dd1))
+
 ### [1.2.1](https://github.com/RedaktionsNetzwerk-Deutschland/reviewdog-action-phpcs/compare/v1.2.0...v1.2.1) (2021-02-15)
 
 
