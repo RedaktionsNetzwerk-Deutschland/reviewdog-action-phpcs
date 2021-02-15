@@ -8,8 +8,7 @@ if [ ! -z "${INPUT_PHPCS_INSTALLED_PATHS}" ];then
   phpcs --config-set installed_paths ${INPUT_PHPCS_INSTALLED_PATHS}
 fi
 
-command_arguments="phpcs"
-command_arguments="$command_arguments --report=checkstyle"
+command_arguments="--report=checkstyle"
 
 if [ -z "${INPUT_COMMAND_ARGS}" ];then
 	if [ ! -z "${INPUT_MEMORY_LIMIT}" ];then
@@ -23,6 +22,7 @@ else
 	command_arguments="$command_arguments ${INPUT_COMMAND_ARGS}"
 fi
 
+echo "Running: $command_arguments";
 
 phpcs $command_arguments \
 | reviewdog \
