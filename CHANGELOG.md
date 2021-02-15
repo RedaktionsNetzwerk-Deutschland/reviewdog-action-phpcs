@@ -1,3 +1,10 @@
+### [1.2.1](https://github.com/RedaktionsNetzwerk-Deutschland/reviewdog-action-phpcs/compare/v1.2.0...v1.2.1) (2021-02-15)
+
+
+### Bug Fixes
+
+* **arguments:** wrongly set arguments wasn't bc ([763ffb8](https://github.com/RedaktionsNetzwerk-Deutschland/reviewdog-action-phpcs/commit/763ffb84057211f02f72028119e634cea094e8ba))
+
 ## [1.2.0](https://github.com/RedaktionsNetzwerk-Deutschland/reviewdog-action-phpcs/compare/v1.1.1...v1.2.0) (2021-02-12)
 
 
